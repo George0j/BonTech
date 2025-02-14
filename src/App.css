@@ -315,7 +315,7 @@ form button:hover {
 
 /*Mobile View*/
 
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px)  {
   header{
     display: flex;
     height: 3.5em;
