@@ -317,7 +317,7 @@ form button:hover {
 
 @media only screen and (max-width: 480px)  {
   header{
-    display: flex;
+    width:max-content;
     height: 3.5em;
     justify-content: end;
     align-items: end;
