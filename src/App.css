@@ -1,7 +1,6 @@
 *{
   margin: auto;
 }
-
 /* HEADER */
 header{
   display: flex;
@@ -319,8 +318,7 @@ form button:hover {
   header{
     justify-content: end;
     align-items: end;
-    background:wheat;
-    position: fixed;
+    background:black;
   }
   
   header h1{
