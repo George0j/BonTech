@@ -315,7 +315,10 @@ form button:hover {
 /*Mobile View*/
 
 @media only screen and (max-width: 480px)  {
+  /*header*/
+
   header{
+    height: 3.5em;
     justify-content: end;
     align-items: end;
     background:black;
@@ -361,4 +364,6 @@ form button:hover {
     color: blue;
     font-size: 18px;
     }
+
+    
 }
