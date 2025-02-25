@@ -24,11 +24,12 @@ header h1{
   display: block;
   cursor: pointer;
   position: absolute;
-  right: 20px;
+  right: 10px;
 }
 .menu-icon img {
   width: 30px;
   height: 30px;
+  visibility: hidden;
 }
 
 nav{
@@ -315,55 +316,59 @@ form button:hover {
 /*Mobile View*/
 
 @media only screen and (max-width: 480px)  {
-  /*header*/
-
   header{
-    height: 3.5em;
-    justify-content: end;
-    align-items: end;
+    height:2.5em;
+    justify-content: center;
+    align-items: center;
     background:black;
+    display: flex;
   }
   
   header h1{
-    font-size: 1.3em;
+    font-size: 1em;
     text-shadow: -1px -1px 0 #fff,1px -1px #fff,-1px 1px #fff, 1px 1px 0 #fff;
     margin-left: 5px;
     margin-bottom:7px ;
   }
-  .menu-icon{
-    display: block;
-    background-color: blanchedalmond;
-    justify-content: center;
+  .menu-icon img {
+    width: 30px;
+    height: 20px;
+    visibility:visible;
+    margin-left: auto;
   }
-  .nav-links{
-    display: none;
-    border: 1px solid white;
-  }
-  nav{
-    text-align:center;
-  }
-  .nav-links.open {
-    display: block;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    font-size: small;
-    align-items: center;
-    text-align: center;
+
+  .nav-links {
+    display: none; 
+    flex-direction: column;
     position: absolute;
-    top: 4.2em;
-    width: 100%;
-    height: fit-content;
-    background-color:transparent;
-    border-radius: 6px;
-    padding: 6px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-    justify-content:center;
-    z-index: 1100;
+    top:3em;
+    right: 0;
+    width: 40%;
+    background: black;
+    text-align: center;
+    padding: 10px 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 50%;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+    font-size: small;
   }
   nav ul li a.active {
-    color: blue;
-    font-size: 18px;
+    color:blue;
+    font-size: large;
     }
 
-    
+  .menu-icon img {
+    visibility: visible; 
+  }
 }
