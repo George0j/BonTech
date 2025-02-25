@@ -325,14 +325,14 @@ form button:hover {
   }
   
   header h1{
-    font-size: 1em;
+    font-size: 1.4em;
     text-shadow: -1px -1px 0 #fff,1px -1px #fff,-1px 1px #fff, 1px 1px 0 #fff;
     margin-left: 5px;
     margin-bottom:7px ;
   }
   .menu-icon img {
-    width: 30px;
-    height: 20px;
+    width:50px;
+    height: 40px;
     visibility:visible;
     margin-left: auto;
   }
@@ -371,4 +371,5 @@ form button:hover {
   .menu-icon img {
     visibility: visible; 
   }
+
 }
