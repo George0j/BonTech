@@ -316,6 +316,7 @@ form button:hover {
 /*Mobile View*/
 
 @media only screen and (max-width: 480px)  {
+  /*header*/
   header{
     height:2.5em;
     justify-content: center;
@@ -371,5 +372,50 @@ form button:hover {
   .menu-icon img {
     visibility: visible; 
   }
-
+  .home{
+    margin-top:2em;
+    display:flex;
+    flex-direction: column-reverse;
+  }
+    .home .left{
+    margin-left: 0;
+    width:100%;
+    text-shadow:3px 4px 5px black;
+    }
+    .left h1{
+    margin-left:20px;
+    font-size:20px;
+    }
+    .left h4{
+    padding-left:50px;
+    font-size:15px;
+    }
+    .display{
+    margin-left:50px;
+    font-size:1rem;
+    }
+    .left h3{
+    margin-left: 20px;  
+    width:80%;
+    font-size:0.8em;
+    }
+    .left h6{
+    margin-top: 10px;
+    margin-left:20px;
+    width:80%;
+    }
+    
+    .contact p{
+    font-size:11px;
+    }
+    .contact h1{
+    font-size:18px;
+    }
+    
+    .home .right{
+    margin-top: 1em;
+    font-size:1em;
+    text-shadow: 6px 10px 16px white;
+    }
+    
 }

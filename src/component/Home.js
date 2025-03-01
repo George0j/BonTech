@@ -9,10 +9,12 @@ const Home=()=>{
         if(hours<12){
             message="Good Morning";
         }
-        else if(hours<18){
+        else if(hours<15){
             message = "Good Afternoon";
         }
-
+        else{
+            message="Good Evening";
+        }
         setGreeting(`${message}, Welcome to Bontech Technologies, your Tech Partner 4G`);
     }, []);
 
