@@ -316,9 +316,15 @@ form button:hover {
 /*Mobile View*/
 
 @media only screen and (max-width: 480px)  {
+  body{
+    height: 100dvh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
   /*header*/
   header{
-    height:max-content;
+    height:2.5em;
     justify-content: center;
     align-items: center;
     background:black;
