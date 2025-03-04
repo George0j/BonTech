@@ -320,7 +320,7 @@ form button:hover {
     height: 100dvh;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow-y: auto;
   }
   /*header*/
   header{
