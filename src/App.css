@@ -318,7 +318,7 @@ form button:hover {
 @media only screen and (max-width: 480px)  {
   /*header*/
   header{
-    height:2.5em;
+    height:max-content;
     justify-content: center;
     align-items: center;
     background:black;
@@ -411,7 +411,7 @@ form button:hover {
     }
     .contact{
       display: flex;
-      justify-content: c;
+      justify-content: center;
     }
     .contact p{
     font-size:11px;
