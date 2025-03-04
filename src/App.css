@@ -378,13 +378,15 @@ form button:hover {
     flex-direction: column-reverse;
   }
     .home .left{
+      justify-content: center;
+      align-items: center;
     margin-left: 0;
     width:100%;
     text-shadow:3px 4px 5px black;
     }
     .left h1{
     margin-left:20px;
-    font-size:20px;
+    font-size:30px;
     }
     .left h4{
     padding-left:50px;
@@ -392,19 +394,25 @@ form button:hover {
     }
     .display{
     margin-left:50px;
-    font-size:1rem;
+    font-size:1.1rem;
     }
     .left h3{
     margin-left: 20px;  
-    width:80%;
-    font-size:0.8em;
+    width:85%;
+    height: fit-content;
+    font-size:1.3em;
+    margin-right: 20px;
     }
     .left h6{
+    
     margin-top: 10px;
     margin-left:20px;
-    width:80%;
+    width:50%;
     }
-    
+    .contact{
+      display: flex;
+      justify-content: c;
+    }
     .contact p{
     font-size:11px;
     }
@@ -414,7 +422,7 @@ form button:hover {
     
     .home .right{
     margin-top: 1em;
-    font-size:1em;
+    font-size:2em;
     text-shadow: 6px 10px 16px white;
     }
 }
