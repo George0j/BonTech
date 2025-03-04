@@ -317,7 +317,7 @@ form button:hover {
 
 @media only screen and (max-width: 480px)  {
   body{
-    height: 100dvh;
+    height: 130dvh;
     margin: 0;
     padding: 0;
     overflow-y: auto;
