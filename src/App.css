@@ -75,7 +75,7 @@ font-size: 23px;
 .home{
   margin-top: 4em;
   width: 100%;
-  height:max-content;
+  height:fit-content;
   display: flex;
   background:linear-gradient(to bottom, white,black);
   background: url('./component/images/bg.jpg');
@@ -316,19 +316,24 @@ form button:hover {
 /*Mobile View*/
 
 @media only screen and (max-width: 480px)  {
-  body{
-    height: 130dvh;
+  html,body{
+    height: 100%;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    height:10vh;
+    margin-bottom: 0;
     overflow-y: auto;
   }
   /*header*/
   header{
+    top: 0;
     height:2.5em;
     justify-content: center;
     align-items: center;
     background:black;
     display: flex;
+    z-index: 1000;
   }
   
   header h1{
@@ -406,6 +411,7 @@ form button:hover {
     margin-left: 20px;  
     width:85%;
     height: fit-content;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size:1.3em;
     margin-right: 20px;
     }
@@ -415,20 +421,50 @@ form button:hover {
     margin-left:20px;
     width:50%;
     }
-    .contact{
-      display: flex;
-      justify-content: center;
+
+    .contact {
+      flex-direction: column; 
+      align-items: center;
+      text-align: center;
+      gap: 10px; 
     }
-    .contact p{
-    font-size:11px;
+  
+    .email-section, .contact-section {
+      width: 60%;
     }
-    .contact h1{
-    font-size:18px;
+  
+    .contact p {
+      font-size: 18px;
+      font-weight: bold;
+      color: black;
+      margin-bottom: 5px;
     }
-    
+  
+    .contact h1 {
+      border: 1px solid black;
+      border-radius: 7px;
+      box-shadow: 3px 3px 1px black;
+      font-size: 16px;
+      padding: 8px;
+      text-align: center;
+      width: 100%;
+    }
+    .contact h1 a {
+      color: white;
+      text-decoration: none;
+      font-size: 11px;
+      font-weight: bold;
+    }
+  
+    .contact h1 a:hover {
+      font-size: 11px;
+      text-decoration: underline;
+    }
+
     .home .right{
     margin-top: 1em;
     font-size:2em;
     text-shadow: 6px 10px 16px white;
     }
+
 }
